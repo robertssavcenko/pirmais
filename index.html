@@ -8,6 +8,7 @@
       p.double {border-style: double;}
       </style>
     <head>
+    
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <style>body {
@@ -33,7 +34,26 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
       </style>
-    </head>
+
+
+      <style>
+#RadamaisSaturs{
+  display:none ;
+}
+      </style>
+
+      <script>
+function raditsaturu(){
+document.getElementById("RadamaisSaturs").style.display = "block" ;
+document.getElementById("PogaRadit").style.display = "none" ;
+}
+funtcion pasleptsaturu(){
+  document.getElementById("RadamaisSaturs").style.display = "none" ;
+  document.getElementById("PogaRadit").style.display = "block" ;
+}
+      </script>
+  
+  </head>
 
 
 
@@ -55,12 +75,16 @@
           <div class="col-9">
           <p class="w-75 p-3 double" style="text-align:right;">Kobe Bean Bryant (August 23, 1978 – January 26, 2020) was an American professional basketball player.
             A shooting guard, he spent his entire 20-year career with the Los Angeles Lakers in the National Basketball Association (NBA).
+  <button id="PogaRadit" onclick="raditsaturu()">Read more</button>
+  <div id="RadamaisSaturs">
             Widely regarded as one of the greatest basketball players of all time,
             Bryant won five NBA championships and was an 18-time All-Star, a 15-time member of the All-NBA Team, 
             a 12-time member of the All-Defensive Team, the 2008 NBA Most Valuable Player (MVP), and a two-time NBA Finals MVP.
             Bryant also led the NBA in scoring twice and ranks fourth in league all-time regular season and postseason scoring. 
-            He was posthumously voted into the Naismith Memorial Basketball Hall of Fame in 2020 and named to the NBA 75th Anniversary Team in 2021.</p>
-
+            He was posthumously voted into the Naismith Memorial Basketball Hall of Fame in 2020 and named to the NBA 75th Anniversary Team in 2021.
+  <button onclick="pasleptsaturu()">Close</button>
+</p>
+         </div>
          </div>
 
          <div class="container text-center">
